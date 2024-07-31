@@ -5,7 +5,6 @@ from django.db import models
 class DanApp(models.Model):
   origin_country = models.CharField(max_length=64)
   destination_country = models.CharField(max_length=64)
-  nights = models.models.models.IntegerField()
-  price = models.models.models.IntegerField()
+  nights = models.IntegerField()
+  price = models.IntegerField()
   
-cd 
