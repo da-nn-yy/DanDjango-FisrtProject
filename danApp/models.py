@@ -11,4 +11,4 @@ class DanApp(models.Model):
   # string rep. of tours
   def __str__(self):
     return(f"ID:{self.id}: From {self.origin_country} to {self.destination_country}, {self.nights} nights costs ${self.price}")
-  
+    
