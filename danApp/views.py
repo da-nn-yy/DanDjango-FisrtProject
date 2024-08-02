@@ -13,18 +13,18 @@ from .models import DanApp
 
 #Home page view func.
 def home_view(request):
-  return render(request, 'danApp/home.html',)
+  return render(request, 'danApp/home.html')
 
 def contact_view(request):
-  if request.method == 'POST':
+  if request.method =='POST':
     form = ContactForm(request.POST)
     if form.is_valid():
       form.send_email()
-      return redirect('success')
+      return redirect('contact_success')
   else:
     form = ContactForm()
-  context = {'form' : form}
-  return render(request,'danApp/contact.html')
+  context = {'form' : form }
+  return render(request,'danApp/contact.html',context)
 
-def contact_success(request):
+def contact_success_view(request):
   return(request,'danApp/success.html')
