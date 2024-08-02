@@ -27,4 +27,4 @@ def contact_view(request):
   return render(request,'danApp/contact.html',context)
 
 def contact_success_view(request):
-  return(request,'danApp/success.html')
+  return render(request,'danApp/success.html')
