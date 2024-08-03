@@ -15,7 +15,7 @@
     <h1>Welcome to my Django</h1>
     <h4>Django is a python framework to bulid web applications.</h4>
     <p>To continue to the course fill the form first.</p>
-    <img src="{% static 'images/logo.svg' %}" alt="logo" />
+    <img src="{% static 'images/logo.svg' %}" class="logo" alt="logo" />
     <form action="{% url 'contact' %}" method="get">
       <button type="submit" class="btn">Click to Enter form</button>
     </form>
