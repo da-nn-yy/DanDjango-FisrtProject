@@ -22,6 +22,7 @@ def register_view(request):
 
 def login_view(request):
   pass
+
 def logout_view(request):
   pass
 
