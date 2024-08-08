@@ -53,4 +53,4 @@ class ProtectedView(LoginRequiredMixin, View):
   # 'next' - to redirect URL
   redirect_field_name = 'redirect_to'
   def get(self, request):
-    return render(request,'regstration/protected.html')
+    return render(request,'registration/protected.html')
