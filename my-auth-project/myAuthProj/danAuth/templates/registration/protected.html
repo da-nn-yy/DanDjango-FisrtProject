@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protected</title>
+  <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/style.css' %}"
+    />
+</head>
+<body>
+  <div class="container">
+    <h2>Protected</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos reprehenderit aliquid sequi velit animi delectus dolor earum aliquam culpa. Natus ipsa accusamus ad modi repudiandae neque porro, amet sapiente.</p>
+    <a href="{% url "home" %}">Home</a>
+  </div>
+</body>
+</html>
