@@ -25,10 +25,12 @@
       <label for="password">Password:</label>
       <input type="password" name="password" id="password" required>
     </div>
+    <button type="submit">Login</button>
     {% if error %}
     <p class="error">{{ error }}</p>
     {% endif %}
     <p>Don't have an account? <a href="{% url "register" %}">Register Here</a></p>
+
   </form>
 </body>
 </html>
