@@ -21,9 +21,9 @@ from danAuth import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('danAuth')),
+    path('',include('danAuth.urls')),
     path('accounts/login/',views.login_view,name="login"),
-    path('accounts/logout/',views.login_view,name="logout"),
-    path('accounts/regist/',views.login_view,name="register"),
+    path('accounts/logout/',views.logout_view,name="logout"),
+    path('accounts/regist/',views.register_view,name="register"),
     
 ]
