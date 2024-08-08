@@ -2,7 +2,7 @@ from django.shortcuts import render,redirect
 from django.contrib.auth import authenticate , login,logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin 
-from django.view import View
+from django.views import View
 from django.contrib.auth.models import User
 from .forms import RegisterForm
 
@@ -44,7 +44,7 @@ def logout_view(request):
 #home page using the decorator
 @login_required
 def home_view(request):
-  return render(request,'home/home.html')
+  return render(request,'auth1_app/home.html')
 
 #protetcted view
 class ProtectedView(LoginRequiredMixin, View):
