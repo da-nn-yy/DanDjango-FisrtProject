@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>login</title>
-  <link rel="stylesheet" href="{% static "css/style.css" %}}">
+  <link rel="stylesheet" href="{% static "css/style.css" %}">
   <style>
     .error{
       color:red;
@@ -14,7 +14,7 @@
 </head>
 <body>
   <h2>Login</h2>
-  <form action="{% url "login" %}}" method="post">
+  <form action="{% url "login" %}" method="post">
     {% csrf_token %}
     <input type="hidden" name="next" value="{{next}}"/>  {% comment %}hidden input{% endcomment %}
     <div class="form-group">
@@ -28,7 +28,7 @@
     {% if error %}
     <p class="error">{{ error }}</p>
     {% endif %}
-    <p>Don't have an account? <a href="{% {% url "regist" %}}">Register Here</a></p>
+    <p>Don't have an account? <a href="{% url "register" %}">Register Here</a></p>
   </form>
 </body>
 </html>
