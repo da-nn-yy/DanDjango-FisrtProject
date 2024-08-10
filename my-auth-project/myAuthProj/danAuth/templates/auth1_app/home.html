@@ -5,8 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <linkrel
-      ="stylesheet"
+    <link rel="stylesheet"
       type="text/css"
       href="{% static 'css/style.css' %}"
     />
@@ -14,7 +13,7 @@
   <body>
     <dic class="container">
       <h2>Home</h2>
-      <p>Welcome, {{request.user.username}}</p>
+      <p>Welcome,  {{request.user.username}}</p>
       <a href="{% url "protected" %}">Go to your Protected page!</a>
       <form action="{% url "logout" %}" method="post">
         {% csrf_token %}

@@ -12,9 +12,9 @@
     />
   </head>
   <body>
-    <div class="container">
+    <div class="container regist">
       <h2>Register</h2>
-      <form action="{% url 'register' %}" method="post">
+      <form action="{% url 'register' %}" method="post" class="rform">
         {% csrf_token %} {{form.as_p}}
         <button type="submit">Register</button>
       </form>
