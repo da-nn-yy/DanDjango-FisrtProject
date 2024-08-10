@@ -12,11 +12,12 @@
     />
   </head>
   <body>
-    <div class="container regist">
+    <div class="container forms">
       <h2>Register</h2>
-      <form action="{% url 'register' %}" method="post" class="rform">
+      <form action="{% url 'register' %}" method="post" class="form rform">
         {% csrf_token %} {{form.as_p}}
         <button type="submit">Register</button>
+        <p>Have an account? <a href="{% url "login" %}">Login here</a></p>
       </form>
     </div>
   </body>
